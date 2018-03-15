@@ -1,0 +1,1141 @@
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+	<meta http-equiv="Content-Language" content="en" />
+
+	<title>mldata :: Repository ::  :: regression-datasets housing</title>
+
+	<meta name="ROBOTS" content="ALL" />
+	<meta http-equiv="imagetoolbar" content="no" />
+	<meta name="Copyright" content="Sebastian Henschel" />
+	<meta name="keywords" content="machine learning, pascal" />
+	<meta name="description" content="PASCAL Machine Learning Benchmarks Repository" />
+
+	<link rel="alternate" type="application/rss+xml" title="Blog" href="/blog/rss/latest" />
+	<link rel="alternate" type="application/rss+xml" title="Forum" href="/forum/rss" />
+	<link rel="shortcut icon" href="/media/images/favicon.ico" />
+	<link rel="stylesheet" media="screen,projection" type="text/css" href="/media/css/reset.css" />
+	<link rel="stylesheet" media="screen,projection" type="text/css" href="/media/css/main.css" />
+	<!--[if lte IE 6]><link rel="stylesheet" type="text/css" href="/media/css/main-msie.css" /><![endif]-->
+	<link rel="stylesheet" media="screen,projection" type="text/css" href="/media/css/style.css" />
+	<link rel="stylesheet" media="print" type="text/css" href="/media/css/print.css" />
+	<script type="text/javascript" src="/media/js/jquery/jquery.min.js"></script>
+	
+<script type="text/javascript" src="/media/js/jquery/jquery-ui.min.js"></script>
+<script type="text/javascript">
+    var hover_timer = null;
+    var hover_delay = 500;
+
+    function hover_del_timer() {
+        if (hover_timer) {
+            clearTimeout(hover_timer);
+            hover_timer = null;
+        }
+    }
+
+    function hover_set_timer(elem) {
+        hover_del_timer();
+        hover_timer = setTimeout(function() {
+            $(elem).css('visibility', 'visible');
+        }, hover_delay);
+    }
+
+
+    $(function() {
+        $('#delete').click(function() {
+            if (confirm('Do you really want to delete this version?')) {
+                return true;
+            } else {
+                return false;
+            }
+        });
+
+        
+
+        $('#rating').hover(function() { hover_set_timer('#rating-hide'); });
+        $('#rating').mouseleave(function() { hover_del_timer(); });
+        $('#rating-hide-close').click(function() {
+            $('#rating-hide').css('visibility', 'hidden');
+            return false; // otherwise browser would append '#' to url
+        });
+
+        var $tabs = $('#tabs').tabs();
+		
+
+        $("a.download-convert-link").click(function() {
+           $("p.download-note").fadeIn('slow');
+        });
+    });
+</script>
+
+</head>
+
+<body id="repository">
+<div id="main">
+	<div id="header">
+		<p id="logo"><a href="/"><img width="315" height="100" src="/media/images/mldata-logo.png" alt="mldata.org logo"></img></a></p>
+		<!--<div id="slogan">Machine Learning Data Set Repository</div>-->
+		<div id="slogan"><a href="/repository/data/">Data</a>, <a href="/repository/task/">Tasks</a>, <a href="/repository/method/">Methods</a>, <a href="/repository/challenge/">Challenges</a></div>
+	</div><!-- /header -->
+
+	<hr class="noscreen" />
+
+	<div id="nav" class="box">
+		<ul>
+			<li><a href="/about/">About</a></li>
+		</ul>
+		<div class="repository">
+			<ul>
+				<li class="active"><a href="/repository/data/">Data</a></li>
+				<li><a href="/repository/task/">Task</a></li>
+				<li><a href="/repository/method/">Method</a></li>
+				<li><a href="/repository/challenge/">Challenge</a></li>
+			</ul>
+		</div>
+		<ul>
+		
+		
+			<li><a href="/accounts/signup/">Registration</a></li>
+			<li class="last"><a href="/accounts/signin/">Sign in</a></li>
+		
+		</ul>
+
+		<p id="feeds">
+			
+			<script type="text/javascript" src="http://w.sharethis.com/button/sharethis.js#tabs=web%2Cemail&amp;charset=utf-8&amp;services=reddit%2Cdigg%2Cdelicious%2Cstumbleupon%2Cyahoo_buzz%2Ctechnorati%2Cgoogle_bmarks%2Cyahoo_bmarks%2Cfurl%2Cslashdot%2Cmagnolia%2Cmister_wong%2Cyigg&amp;style=default&amp;publisher=85555fbd-bb3a-4ab4-af6f-5dea32a6a5e4"></script>
+		</p><!-- /feeds -->
+	</div><!-- /nav -->
+
+
+	<hr class="noscreen" />
+
+	
+	<div id="cols2">
+		<div id="cols2-in" class="box">
+			<div id="content-cols2">
+				<div class="in">
+					<p id="breadcrumbs">You are here: <a href="/">Home</a> / <a href="/repository/">Repository</a> / <a href="/repository/data/">Data</a> / View /
+regression-datasets housing
+</p>
+				</div>
+
+				
+<h2 class="title-01">View regression-datasets housing 
+    (public)
+</h2>
+<div class="in">
+    <!-- Title bar -->
+    <div id="info">
+		2011-09-14 15:17
+        by cong
+        | Version 2
+        | <span id="rating">
+            <a href="#">Rating</a> <img src="/media/images/stars/blank.png" alt="Empty Star"/><img src="/media/images/stars/blank.png" alt="Empty Star"/><img src="/media/images/stars/blank.png" alt="Empty Star"/><img src="/media/images/stars/blank.png" alt="Empty Star"/><img src="/media/images/stars/blank.png" alt="Empty Star"/><img src="/media/images/stars/blank.png" alt="Empty Star"/>
+        </span>
+        <div id="rating-hide">
+
+<div id="rating-hide-title">
+	<div style="float:left" id="rating-hide-head">Rating</div>
+	<div style="float:right" id="rating-hide-close"><a href="#">X</a></div>
+</div>
+<div style="clear:both" id="rating-hide-results">
+	<div><nobr><img src="/media/images/stars/blank.png" alt="Empty Star"/><img src="/media/images/stars/blank.png" alt="Empty Star"/><img src="/media/images/stars/blank.png" alt="Empty Star"/><img src="/media/images/stars/blank.png" alt="Empty Star"/><img src="/media/images/stars/blank.png" alt="Empty Star"/><img src="/media/images/stars/blank.png" alt="Empty Star"/></nobr> Overall (based on 0 votes)</div>
+	<div><nobr><img src="/media/images/stars/blank.png" alt="Empty Star"/><img src="/media/images/stars/blank.png" alt="Empty Star"/><img src="/media/images/stars/blank.png" alt="Empty Star"/><img src="/media/images/stars/blank.png" alt="Empty Star"/><img src="/media/images/stars/blank.png" alt="Empty Star"/><img src="/media/images/stars/blank.png" alt="Empty Star"/></nobr> Interesting</div>
+	<div><nobr><img src="/media/images/stars/blank.png" alt="Empty Star"/><img src="/media/images/stars/blank.png" alt="Empty Star"/><img src="/media/images/stars/blank.png" alt="Empty Star"/><img src="/media/images/stars/blank.png" alt="Empty Star"/><img src="/media/images/stars/blank.png" alt="Empty Star"/><img src="/media/images/stars/blank.png" alt="Empty Star"/></nobr> Documentation</div>
+</div>
+
+</div>
+    </div>
+
+    <!-- Actions -->
+    <div id="actions">
+		
+		<a id="disabled">ACTIVATE</a>
+		<a id="disabled">EDIT</a>
+		<a href="/repository/data/fork/5268/" title="Fork this version to create a new one based on the current one">FORK</a>
+        <a id="disabled">DELETE</a>
+        
+        <br>
+        <p class="action-note">Object is <b>LOCKED</b> because others depend on it.<br> Fork to change.</p>
+        
+    </div>
+	<div id="itemview-separator"></div>
+    
+
+
+    <div id="tabs">
+        <ul class="clearfix">
+            <li><a title="Primary attributes of item + download" href="#tabs-summary">Summary</a></li>
+            <li><a title="Extracted/parsed/visualised data from the file" href="#tabs-data">Data</a></li>
+            <li><a title="Other attributes of item" href="#tabs-more">More Info</a></li>
+            <li><a title="History of item" href="#tabs-history">History</a></li>
+            <li><a title="Comments on item" href="#tabs-comments">Comments</a></li>
+            <li><a title="Statistics about item" href="#tabs-stats">Stats</a></li>
+	    <li id="tab-tabs-method"><a title="Tasks defined on dataset" href="#tabs-method">Tasks</a></li>
+        </ul>
+
+        <div id="tabs-summary">
+            <dl id="news">
+                <dt>Summary</dt>
+                <dd><p>UCI boston housing data
+</p></dd>
+                
+                <dt>License</dt>
+                <dd><a href="http://www.cs.waikato.ac.nz/ml/weka/index_datasets.html">unknown (from Weka repository)</a></dd>
+                <dt>Dependencies</dt>
+                <dd>
+                </dd>
+                <dt>Tags</dt>
+                <dd><a href="/repository/tags/data/arff/">arff</a> <a href="/repository/tags/data/slurped/">slurped</a> <a href="/repository/tags/data/Weka/">Weka</a> </dd>
+                <dt>Attribute Types</a></dt>
+                <dd>
+				Integer,Floating Point
+				</dd>
+                <dt>Download</a></dt>
+                <dd>
+                	
+                    # Instances: 506 / # Attributes: 14<br />
+                    
+					
+                    
+                    <a href="/repository/data/download/regression-datasets-housing/">HDF5 (59.7 KB)</a>
+                    <a href="/repository/data/download/xml/regression-datasets-housing/" class="download-convert-link">XML</a>
+                    <a class="download-convert-link" href="/repository/data/download/csv/regression-datasets-housing/">CSV</a>
+                    <a class="download-convert-link" href="/repository/data/download/arff/regression-datasets-housing/">ARFF</a>
+                    <a>LibSVM</a>
+                    <a class="download-convert-link" href="/repository/data/download/matlab/regression-datasets-housing/">Matlab</a>
+                    <a class="download-convert-link" href="/repository/data/download/octave/regression-datasets-housing/">Octave</a>
+					
+					
+					
+                    
+                    <p class="download-note">Files are converted on demand and the process can take up to a minute. Please wait until download begins.</p>
+                    
+                </dd>
+            </dl>
+            <div>
+                Completeness of this item currently: 100%.<br />
+				
+            </div>
+        </div><!-- /tabs-summary -->
+
+        <div id="tabs-data"><dl id="news">
+            <dt>Original Data Format</dt>
+            <dd>arff</dd>
+            <dt>Name</dt>
+            <dd>&#39;housing&#39;</dd>
+            <dt>Version mldata</dt>
+            <dd>0</dd>
+            <dt>Comment</dt>
+            <dd><ol>
+ <li><p>Title: Boston Housing Data
+</p>
+
+ </li>
+
+ <li><p>Sources:
+      (a) Origin:  This dataset was taken from the StatLib library which is
+               maintained at Carnegie Mellon University.
+      (b) Creator:  Harrison, D. and Rubinfeld, D.L. 'Hedonic prices and the 
+                demand for clean air', J. Environ. Economics &amp; Management,
+                vol.5, 81-102, 1978.
+      (c) Date: July 7, 1993
+</p>
+
+ </li>
+
+ <li><p>Past Usage:
+</p>
+
+ </li>
+
+ <li><p>Used in Belsley, Kuh &amp; Welsch, 'Regression diagnostics ...', Wiley, 
+</p>
+<ol>
+ <li>
+     N.B. Various transformations are used in the table on
+        pages 244-261.
+ </li>
+
+ <li>
+     Quinlan,R. (1993). Combining Instance-Based and Model-Based Learning.
+        In Proceedings on the Tenth International Conference of Machine 
+        Learning, 236-243, University of Massachusetts, Amherst. Morgan
+        Kaufmann.
+ </li>
+</ol>
+
+ </li>
+
+ <li><p>Relevant Information:
+</p>
+
+ </li>
+</ol>
+<p>   Concerns housing values in suburbs of Boston.
+</p>
+<ol>
+ <li><p>Number of Instances: 506
+</p>
+
+ </li>
+
+ <li><p>Number of Attributes: 13 continuous attributes (including "class"
+                        attribute "MEDV"), 1 binary-valued attribute.
+</p>
+
+ </li>
+
+ <li><p>Attribute Information:
+</p>
+<ol>
+ <li>
+     CRIM      per capita crime rate by town
+ </li>
+
+ <li>
+     ZN        proportion of residential land zoned for lots over 
+              25,000 sq.ft.
+ </li>
+
+ <li>
+     INDUS     proportion of non-retail business acres per town
+ </li>
+
+ <li>
+     CHAS      Charles River dummy variable (= 1 if tract bounds 
+              river; 0 otherwise)
+ </li>
+
+ <li>
+     NOX       nitric oxides concentration (parts per 10 million)
+ </li>
+
+ <li>
+     RM        average number of rooms per dwelling
+ </li>
+
+ <li>
+     AGE       proportion of owner-occupied units built prior to 1940
+ </li>
+
+ <li>
+     DIS       weighted distances to five Boston employment centres
+ </li>
+
+ <li>
+     RAD       index of accessibility to radial highways
+ </li>
+
+ <li>
+     TAX      full-value property-tax rate per $10,000
+ </li>
+
+ <li>
+     PTRATIO  pupil-teacher ratio by town
+ </li>
+
+ <li>
+     B        1000(Bk - 0.63)^2 where Bk is the proportion of blacks 
+              by town
+ </li>
+
+ <li>
+     LSTAT    % lower status of the population
+ </li>
+
+ <li>
+     MEDV     Median value of owner-occupied homes in $1000's
+ </li>
+</ol>
+
+ </li>
+
+ <li><p>Missing Attribute Values:  None.
+</p>
+
+ </li>
+</ol></dd>
+            <dt>Names</dt>
+            <dd>CRIM,ZN,INDUS,CHAS,NOX,RM,AGE,DIS,RAD,TAX,</dd>
+            
+                <dt>Types</dt>
+                <dd><ol>
+                    
+                        <li>numeric</li>
+                    
+                        <li>numeric</li>
+                    
+                        <li>numeric</li>
+                    
+                        <li>nominal:0,1</li>
+                    
+                        <li>numeric</li>
+                    
+                        <li>numeric</li>
+                    
+                        <li>numeric</li>
+                    
+                        <li>numeric</li>
+                    
+                        <li>numeric</li>
+                    
+                        <li>numeric</li>
+                    
+                </ol></dd>
+            
+            <dt>Data (first 10 data points)</dt>
+            <dd><ol>
+            <table border="1"> 
+            
+                <tr>    
+                
+                    <th>CRIM</th>        
+                
+                    <th>ZN</th>        
+                
+                    <th>INDUS</th>        
+                
+                    <th>CHAS</th>        
+                
+                    <th>NOX</th>        
+                
+                    <th>RM</th>        
+                
+                    <th>AGE</th>        
+                
+                    <th>DIS</th>        
+                
+                    <th>RAD</th>        
+                
+                    <th>TAX</th>        
+                
+                    <th>...</th>        
+                
+                </tr>
+                
+            
+                <tr>          
+		        
+                    <td>0.00...</td>
+                    <!--            <li>0.00..., 18, 2.31, 0, 0.538, 6.575, 65.2, 4.09, 1, 296, ...</li> -->
+                
+                    <td>18</td>
+                    <!--            <li>0.00..., 18, 2.31, 0, 0.538, 6.575, 65.2, 4.09, 1, 296, ...</li> -->
+                
+                    <td>2.31</td>
+                    <!--            <li>0.00..., 18, 2.31, 0, 0.538, 6.575, 65.2, 4.09, 1, 296, ...</li> -->
+                
+                    <td>0</td>
+                    <!--            <li>0.00..., 18, 2.31, 0, 0.538, 6.575, 65.2, 4.09, 1, 296, ...</li> -->
+                
+                    <td>0.538</td>
+                    <!--            <li>0.00..., 18, 2.31, 0, 0.538, 6.575, 65.2, 4.09, 1, 296, ...</li> -->
+                
+                    <td>6.575</td>
+                    <!--            <li>0.00..., 18, 2.31, 0, 0.538, 6.575, 65.2, 4.09, 1, 296, ...</li> -->
+                
+                    <td>65.2</td>
+                    <!--            <li>0.00..., 18, 2.31, 0, 0.538, 6.575, 65.2, 4.09, 1, 296, ...</li> -->
+                
+                    <td>4.09</td>
+                    <!--            <li>0.00..., 18, 2.31, 0, 0.538, 6.575, 65.2, 4.09, 1, 296, ...</li> -->
+                
+                    <td>1</td>
+                    <!--            <li>0.00..., 18, 2.31, 0, 0.538, 6.575, 65.2, 4.09, 1, 296, ...</li> -->
+                
+                    <td>296</td>
+                    <!--            <li>0.00..., 18, 2.31, 0, 0.538, 6.575, 65.2, 4.09, 1, 296, ...</li> -->
+                
+                    <td>...</td>
+                    <!--            <li>0.00..., 18, 2.31, 0, 0.538, 6.575, 65.2, 4.09, 1, 296, ...</li> -->
+                
+                </tr>    
+            
+                <tr>          
+		        
+                    <td>0.02...</td>
+                    <!--            <li>0.02..., 0, 7.07, 0, 0.469, 6.421, 78.9, 4.9671, 2, 242, ...</li> -->
+                
+                    <td>0</td>
+                    <!--            <li>0.02..., 0, 7.07, 0, 0.469, 6.421, 78.9, 4.9671, 2, 242, ...</li> -->
+                
+                    <td>7.07</td>
+                    <!--            <li>0.02..., 0, 7.07, 0, 0.469, 6.421, 78.9, 4.9671, 2, 242, ...</li> -->
+                
+                    <td>0</td>
+                    <!--            <li>0.02..., 0, 7.07, 0, 0.469, 6.421, 78.9, 4.9671, 2, 242, ...</li> -->
+                
+                    <td>0.469</td>
+                    <!--            <li>0.02..., 0, 7.07, 0, 0.469, 6.421, 78.9, 4.9671, 2, 242, ...</li> -->
+                
+                    <td>6.421</td>
+                    <!--            <li>0.02..., 0, 7.07, 0, 0.469, 6.421, 78.9, 4.9671, 2, 242, ...</li> -->
+                
+                    <td>78.9</td>
+                    <!--            <li>0.02..., 0, 7.07, 0, 0.469, 6.421, 78.9, 4.9671, 2, 242, ...</li> -->
+                
+                    <td>4.9671</td>
+                    <!--            <li>0.02..., 0, 7.07, 0, 0.469, 6.421, 78.9, 4.9671, 2, 242, ...</li> -->
+                
+                    <td>2</td>
+                    <!--            <li>0.02..., 0, 7.07, 0, 0.469, 6.421, 78.9, 4.9671, 2, 242, ...</li> -->
+                
+                    <td>242</td>
+                    <!--            <li>0.02..., 0, 7.07, 0, 0.469, 6.421, 78.9, 4.9671, 2, 242, ...</li> -->
+                
+                    <td>...</td>
+                    <!--            <li>0.02..., 0, 7.07, 0, 0.469, 6.421, 78.9, 4.9671, 2, 242, ...</li> -->
+                
+                </tr>    
+            
+                <tr>          
+		        
+                    <td>0.02...</td>
+                    <!--            <li>0.02..., 0, 7.07, 0, 0.469, 7.185, 61.1, 4.9671, 2, 242, ...</li> -->
+                
+                    <td>0</td>
+                    <!--            <li>0.02..., 0, 7.07, 0, 0.469, 7.185, 61.1, 4.9671, 2, 242, ...</li> -->
+                
+                    <td>7.07</td>
+                    <!--            <li>0.02..., 0, 7.07, 0, 0.469, 7.185, 61.1, 4.9671, 2, 242, ...</li> -->
+                
+                    <td>0</td>
+                    <!--            <li>0.02..., 0, 7.07, 0, 0.469, 7.185, 61.1, 4.9671, 2, 242, ...</li> -->
+                
+                    <td>0.469</td>
+                    <!--            <li>0.02..., 0, 7.07, 0, 0.469, 7.185, 61.1, 4.9671, 2, 242, ...</li> -->
+                
+                    <td>7.185</td>
+                    <!--            <li>0.02..., 0, 7.07, 0, 0.469, 7.185, 61.1, 4.9671, 2, 242, ...</li> -->
+                
+                    <td>61.1</td>
+                    <!--            <li>0.02..., 0, 7.07, 0, 0.469, 7.185, 61.1, 4.9671, 2, 242, ...</li> -->
+                
+                    <td>4.9671</td>
+                    <!--            <li>0.02..., 0, 7.07, 0, 0.469, 7.185, 61.1, 4.9671, 2, 242, ...</li> -->
+                
+                    <td>2</td>
+                    <!--            <li>0.02..., 0, 7.07, 0, 0.469, 7.185, 61.1, 4.9671, 2, 242, ...</li> -->
+                
+                    <td>242</td>
+                    <!--            <li>0.02..., 0, 7.07, 0, 0.469, 7.185, 61.1, 4.9671, 2, 242, ...</li> -->
+                
+                    <td>...</td>
+                    <!--            <li>0.02..., 0, 7.07, 0, 0.469, 7.185, 61.1, 4.9671, 2, 242, ...</li> -->
+                
+                </tr>    
+            
+                <tr>          
+		        
+                    <td>0.03...</td>
+                    <!--            <li>0.03..., 0, 2.18, 0, 0.458, 6.998, 45.8, 6.0622, 3, 222, ...</li> -->
+                
+                    <td>0</td>
+                    <!--            <li>0.03..., 0, 2.18, 0, 0.458, 6.998, 45.8, 6.0622, 3, 222, ...</li> -->
+                
+                    <td>2.18</td>
+                    <!--            <li>0.03..., 0, 2.18, 0, 0.458, 6.998, 45.8, 6.0622, 3, 222, ...</li> -->
+                
+                    <td>0</td>
+                    <!--            <li>0.03..., 0, 2.18, 0, 0.458, 6.998, 45.8, 6.0622, 3, 222, ...</li> -->
+                
+                    <td>0.458</td>
+                    <!--            <li>0.03..., 0, 2.18, 0, 0.458, 6.998, 45.8, 6.0622, 3, 222, ...</li> -->
+                
+                    <td>6.998</td>
+                    <!--            <li>0.03..., 0, 2.18, 0, 0.458, 6.998, 45.8, 6.0622, 3, 222, ...</li> -->
+                
+                    <td>45.8</td>
+                    <!--            <li>0.03..., 0, 2.18, 0, 0.458, 6.998, 45.8, 6.0622, 3, 222, ...</li> -->
+                
+                    <td>6.0622</td>
+                    <!--            <li>0.03..., 0, 2.18, 0, 0.458, 6.998, 45.8, 6.0622, 3, 222, ...</li> -->
+                
+                    <td>3</td>
+                    <!--            <li>0.03..., 0, 2.18, 0, 0.458, 6.998, 45.8, 6.0622, 3, 222, ...</li> -->
+                
+                    <td>222</td>
+                    <!--            <li>0.03..., 0, 2.18, 0, 0.458, 6.998, 45.8, 6.0622, 3, 222, ...</li> -->
+                
+                    <td>...</td>
+                    <!--            <li>0.03..., 0, 2.18, 0, 0.458, 6.998, 45.8, 6.0622, 3, 222, ...</li> -->
+                
+                </tr>    
+            
+                <tr>          
+		        
+                    <td>0.06...</td>
+                    <!--            <li>0.06..., 0, 2.18, 0, 0.458, 7.147, 54.2, 6.0622, 3, 222, ...</li> -->
+                
+                    <td>0</td>
+                    <!--            <li>0.06..., 0, 2.18, 0, 0.458, 7.147, 54.2, 6.0622, 3, 222, ...</li> -->
+                
+                    <td>2.18</td>
+                    <!--            <li>0.06..., 0, 2.18, 0, 0.458, 7.147, 54.2, 6.0622, 3, 222, ...</li> -->
+                
+                    <td>0</td>
+                    <!--            <li>0.06..., 0, 2.18, 0, 0.458, 7.147, 54.2, 6.0622, 3, 222, ...</li> -->
+                
+                    <td>0.458</td>
+                    <!--            <li>0.06..., 0, 2.18, 0, 0.458, 7.147, 54.2, 6.0622, 3, 222, ...</li> -->
+                
+                    <td>7.147</td>
+                    <!--            <li>0.06..., 0, 2.18, 0, 0.458, 7.147, 54.2, 6.0622, 3, 222, ...</li> -->
+                
+                    <td>54.2</td>
+                    <!--            <li>0.06..., 0, 2.18, 0, 0.458, 7.147, 54.2, 6.0622, 3, 222, ...</li> -->
+                
+                    <td>6.0622</td>
+                    <!--            <li>0.06..., 0, 2.18, 0, 0.458, 7.147, 54.2, 6.0622, 3, 222, ...</li> -->
+                
+                    <td>3</td>
+                    <!--            <li>0.06..., 0, 2.18, 0, 0.458, 7.147, 54.2, 6.0622, 3, 222, ...</li> -->
+                
+                    <td>222</td>
+                    <!--            <li>0.06..., 0, 2.18, 0, 0.458, 7.147, 54.2, 6.0622, 3, 222, ...</li> -->
+                
+                    <td>...</td>
+                    <!--            <li>0.06..., 0, 2.18, 0, 0.458, 7.147, 54.2, 6.0622, 3, 222, ...</li> -->
+                
+                </tr>    
+            
+                <tr>          
+		        
+                    <td>0.02...</td>
+                    <!--            <li>0.02..., 0, 2.18, 0, 0.458, 6.43, 58.7, 6.0622, 3, 222, ...</li> -->
+                
+                    <td>0</td>
+                    <!--            <li>0.02..., 0, 2.18, 0, 0.458, 6.43, 58.7, 6.0622, 3, 222, ...</li> -->
+                
+                    <td>2.18</td>
+                    <!--            <li>0.02..., 0, 2.18, 0, 0.458, 6.43, 58.7, 6.0622, 3, 222, ...</li> -->
+                
+                    <td>0</td>
+                    <!--            <li>0.02..., 0, 2.18, 0, 0.458, 6.43, 58.7, 6.0622, 3, 222, ...</li> -->
+                
+                    <td>0.458</td>
+                    <!--            <li>0.02..., 0, 2.18, 0, 0.458, 6.43, 58.7, 6.0622, 3, 222, ...</li> -->
+                
+                    <td>6.43</td>
+                    <!--            <li>0.02..., 0, 2.18, 0, 0.458, 6.43, 58.7, 6.0622, 3, 222, ...</li> -->
+                
+                    <td>58.7</td>
+                    <!--            <li>0.02..., 0, 2.18, 0, 0.458, 6.43, 58.7, 6.0622, 3, 222, ...</li> -->
+                
+                    <td>6.0622</td>
+                    <!--            <li>0.02..., 0, 2.18, 0, 0.458, 6.43, 58.7, 6.0622, 3, 222, ...</li> -->
+                
+                    <td>3</td>
+                    <!--            <li>0.02..., 0, 2.18, 0, 0.458, 6.43, 58.7, 6.0622, 3, 222, ...</li> -->
+                
+                    <td>222</td>
+                    <!--            <li>0.02..., 0, 2.18, 0, 0.458, 6.43, 58.7, 6.0622, 3, 222, ...</li> -->
+                
+                    <td>...</td>
+                    <!--            <li>0.02..., 0, 2.18, 0, 0.458, 6.43, 58.7, 6.0622, 3, 222, ...</li> -->
+                
+                </tr>    
+            
+                <tr>          
+		        
+                    <td>0.08...</td>
+                    <!--            <li>0.08..., 12, 7.87, 0, 0.524, 6.012, 66.6, 5.5605, 5, 311, ...</li> -->
+                
+                    <td>12</td>
+                    <!--            <li>0.08..., 12, 7.87, 0, 0.524, 6.012, 66.6, 5.5605, 5, 311, ...</li> -->
+                
+                    <td>7.87</td>
+                    <!--            <li>0.08..., 12, 7.87, 0, 0.524, 6.012, 66.6, 5.5605, 5, 311, ...</li> -->
+                
+                    <td>0</td>
+                    <!--            <li>0.08..., 12, 7.87, 0, 0.524, 6.012, 66.6, 5.5605, 5, 311, ...</li> -->
+                
+                    <td>0.524</td>
+                    <!--            <li>0.08..., 12, 7.87, 0, 0.524, 6.012, 66.6, 5.5605, 5, 311, ...</li> -->
+                
+                    <td>6.012</td>
+                    <!--            <li>0.08..., 12, 7.87, 0, 0.524, 6.012, 66.6, 5.5605, 5, 311, ...</li> -->
+                
+                    <td>66.6</td>
+                    <!--            <li>0.08..., 12, 7.87, 0, 0.524, 6.012, 66.6, 5.5605, 5, 311, ...</li> -->
+                
+                    <td>5.5605</td>
+                    <!--            <li>0.08..., 12, 7.87, 0, 0.524, 6.012, 66.6, 5.5605, 5, 311, ...</li> -->
+                
+                    <td>5</td>
+                    <!--            <li>0.08..., 12, 7.87, 0, 0.524, 6.012, 66.6, 5.5605, 5, 311, ...</li> -->
+                
+                    <td>311</td>
+                    <!--            <li>0.08..., 12, 7.87, 0, 0.524, 6.012, 66.6, 5.5605, 5, 311, ...</li> -->
+                
+                    <td>...</td>
+                    <!--            <li>0.08..., 12, 7.87, 0, 0.524, 6.012, 66.6, 5.5605, 5, 311, ...</li> -->
+                
+                </tr>    
+            
+                <tr>          
+		        
+                    <td>0.14...</td>
+                    <!--            <li>0.14..., 12, 7.87, 0, 0.524, 6.172, 96.1, 5.9505, 5, 311, ...</li> -->
+                
+                    <td>12</td>
+                    <!--            <li>0.14..., 12, 7.87, 0, 0.524, 6.172, 96.1, 5.9505, 5, 311, ...</li> -->
+                
+                    <td>7.87</td>
+                    <!--            <li>0.14..., 12, 7.87, 0, 0.524, 6.172, 96.1, 5.9505, 5, 311, ...</li> -->
+                
+                    <td>0</td>
+                    <!--            <li>0.14..., 12, 7.87, 0, 0.524, 6.172, 96.1, 5.9505, 5, 311, ...</li> -->
+                
+                    <td>0.524</td>
+                    <!--            <li>0.14..., 12, 7.87, 0, 0.524, 6.172, 96.1, 5.9505, 5, 311, ...</li> -->
+                
+                    <td>6.172</td>
+                    <!--            <li>0.14..., 12, 7.87, 0, 0.524, 6.172, 96.1, 5.9505, 5, 311, ...</li> -->
+                
+                    <td>96.1</td>
+                    <!--            <li>0.14..., 12, 7.87, 0, 0.524, 6.172, 96.1, 5.9505, 5, 311, ...</li> -->
+                
+                    <td>5.9505</td>
+                    <!--            <li>0.14..., 12, 7.87, 0, 0.524, 6.172, 96.1, 5.9505, 5, 311, ...</li> -->
+                
+                    <td>5</td>
+                    <!--            <li>0.14..., 12, 7.87, 0, 0.524, 6.172, 96.1, 5.9505, 5, 311, ...</li> -->
+                
+                    <td>311</td>
+                    <!--            <li>0.14..., 12, 7.87, 0, 0.524, 6.172, 96.1, 5.9505, 5, 311, ...</li> -->
+                
+                    <td>...</td>
+                    <!--            <li>0.14..., 12, 7.87, 0, 0.524, 6.172, 96.1, 5.9505, 5, 311, ...</li> -->
+                
+                </tr>    
+            
+                <tr>          
+		        
+                    <td>0.21...</td>
+                    <!--            <li>0.21..., 12, 7.87, 0, 0.524, 5.631, 100.0, 6.0821, 5, 311, ...</li> -->
+                
+                    <td>12</td>
+                    <!--            <li>0.21..., 12, 7.87, 0, 0.524, 5.631, 100.0, 6.0821, 5, 311, ...</li> -->
+                
+                    <td>7.87</td>
+                    <!--            <li>0.21..., 12, 7.87, 0, 0.524, 5.631, 100.0, 6.0821, 5, 311, ...</li> -->
+                
+                    <td>0</td>
+                    <!--            <li>0.21..., 12, 7.87, 0, 0.524, 5.631, 100.0, 6.0821, 5, 311, ...</li> -->
+                
+                    <td>0.524</td>
+                    <!--            <li>0.21..., 12, 7.87, 0, 0.524, 5.631, 100.0, 6.0821, 5, 311, ...</li> -->
+                
+                    <td>5.631</td>
+                    <!--            <li>0.21..., 12, 7.87, 0, 0.524, 5.631, 100.0, 6.0821, 5, 311, ...</li> -->
+                
+                    <td>100.0</td>
+                    <!--            <li>0.21..., 12, 7.87, 0, 0.524, 5.631, 100.0, 6.0821, 5, 311, ...</li> -->
+                
+                    <td>6.0821</td>
+                    <!--            <li>0.21..., 12, 7.87, 0, 0.524, 5.631, 100.0, 6.0821, 5, 311, ...</li> -->
+                
+                    <td>5</td>
+                    <!--            <li>0.21..., 12, 7.87, 0, 0.524, 5.631, 100.0, 6.0821, 5, 311, ...</li> -->
+                
+                    <td>311</td>
+                    <!--            <li>0.21..., 12, 7.87, 0, 0.524, 5.631, 100.0, 6.0821, 5, 311, ...</li> -->
+                
+                    <td>...</td>
+                    <!--            <li>0.21..., 12, 7.87, 0, 0.524, 5.631, 100.0, 6.0821, 5, 311, ...</li> -->
+                
+                </tr>    
+            
+                <tr>          
+		        
+                    <td>0.17...</td>
+                    <!--            <li>0.17..., 12, 7.87, 0, 0.524, 6.004, 85.9, 6.5921, 5, 311, ...</li> -->
+                
+                    <td>12</td>
+                    <!--            <li>0.17..., 12, 7.87, 0, 0.524, 6.004, 85.9, 6.5921, 5, 311, ...</li> -->
+                
+                    <td>7.87</td>
+                    <!--            <li>0.17..., 12, 7.87, 0, 0.524, 6.004, 85.9, 6.5921, 5, 311, ...</li> -->
+                
+                    <td>0</td>
+                    <!--            <li>0.17..., 12, 7.87, 0, 0.524, 6.004, 85.9, 6.5921, 5, 311, ...</li> -->
+                
+                    <td>0.524</td>
+                    <!--            <li>0.17..., 12, 7.87, 0, 0.524, 6.004, 85.9, 6.5921, 5, 311, ...</li> -->
+                
+                    <td>6.004</td>
+                    <!--            <li>0.17..., 12, 7.87, 0, 0.524, 6.004, 85.9, 6.5921, 5, 311, ...</li> -->
+                
+                    <td>85.9</td>
+                    <!--            <li>0.17..., 12, 7.87, 0, 0.524, 6.004, 85.9, 6.5921, 5, 311, ...</li> -->
+                
+                    <td>6.5921</td>
+                    <!--            <li>0.17..., 12, 7.87, 0, 0.524, 6.004, 85.9, 6.5921, 5, 311, ...</li> -->
+                
+                    <td>5</td>
+                    <!--            <li>0.17..., 12, 7.87, 0, 0.524, 6.004, 85.9, 6.5921, 5, 311, ...</li> -->
+                
+                    <td>311</td>
+                    <!--            <li>0.17..., 12, 7.87, 0, 0.524, 6.004, 85.9, 6.5921, 5, 311, ...</li> -->
+                
+                    <td>...</td>
+                    <!--            <li>0.17..., 12, 7.87, 0, 0.524, 6.004, 85.9, 6.5921, 5, 311, ...</li> -->
+                
+                </tr>    
+            
+                <tr>          
+		        
+                    <td>...</td>
+                    <!--            <li>..., ..., ..., ..., ..., ..., ..., ..., ..., ..., ...</li> -->
+                
+                    <td>...</td>
+                    <!--            <li>..., ..., ..., ..., ..., ..., ..., ..., ..., ..., ...</li> -->
+                
+                    <td>...</td>
+                    <!--            <li>..., ..., ..., ..., ..., ..., ..., ..., ..., ..., ...</li> -->
+                
+                    <td>...</td>
+                    <!--            <li>..., ..., ..., ..., ..., ..., ..., ..., ..., ..., ...</li> -->
+                
+                    <td>...</td>
+                    <!--            <li>..., ..., ..., ..., ..., ..., ..., ..., ..., ..., ...</li> -->
+                
+                    <td>...</td>
+                    <!--            <li>..., ..., ..., ..., ..., ..., ..., ..., ..., ..., ...</li> -->
+                
+                    <td>...</td>
+                    <!--            <li>..., ..., ..., ..., ..., ..., ..., ..., ..., ..., ...</li> -->
+                
+                    <td>...</td>
+                    <!--            <li>..., ..., ..., ..., ..., ..., ..., ..., ..., ..., ...</li> -->
+                
+                    <td>...</td>
+                    <!--            <li>..., ..., ..., ..., ..., ..., ..., ..., ..., ..., ...</li> -->
+                
+                    <td>...</td>
+                    <!--            <li>..., ..., ..., ..., ..., ..., ..., ..., ..., ..., ...</li> -->
+                
+                    <td>...</td>
+                    <!--            <li>..., ..., ..., ..., ..., ..., ..., ..., ..., ..., ...</li> -->
+                
+                </tr>    
+            
+        </table>
+                </ol></dd>
+        </dl></div><!-- /tabs-data -->
+
+        <div id="tabs-more"><dl id="news">
+            <dt>Description</dt>
+            <dd><p>A jarfile containing 30 regression datasets collected by
+               Luis Torgo 
+                 (regression-datasets.jar, 10,090,266 Bytes).
+</p></dd>
+            <dt>URLs</dt>
+            <dd><a href="http://archive.ics.uci.edu/ml/datasets/Housing" rel="nofollow">http://archive.ics.uci.edu/ml/datasets/Housing</a></dd>
+            <dt>Publications</dt>
+            <dd><ul></ul></dd>
+            <dt>Data Source</dt>
+            <dd>Originally from the UCI machine learning repository.
+</dd>
+            <dt>Measurement Details</dt>
+            <dd><p>From the UCI repository:
+</p>
+<ol>
+ <li><p>Title: Boston Housing Data
+</p>
+
+ </li>
+
+ <li><p>Sources:
+      (a) Origin:  This dataset was taken from the StatLib library which is
+               maintained at Carnegie Mellon University.
+      (b) Creator:  Harrison, D. and Rubinfeld, D.L. 'Hedonic prices and the 
+                demand for clean air', J. Environ. Economics &amp; Management,
+                vol.5, 81-102, 1978.
+      (c) Date: July 7, 1993
+</p>
+
+ </li>
+
+ <li><p>Past Usage:
+</p>
+
+ </li>
+
+ <li><p>Used in Belsley, Kuh &amp; Welsch, 'Regression diagnostics ...', Wiley, 
+</p>
+<ol>
+ <li>
+     N.B. Various transformations are used in the table on
+        pages 244-261.
+ </li>
+
+ <li>
+     Quinlan,R. (1993). Combining Instance-Based and Model-Based Learning.
+        In Proceedings on the Tenth International Conference of Machine 
+        Learning, 236-243, University of Massachusetts, Amherst. Morgan
+        Kaufmann.
+ </li>
+</ol>
+
+ </li>
+
+ <li><p>Relevant Information:
+</p>
+
+ </li>
+</ol>
+<p>   Concerns housing values in suburbs of Boston.
+</p>
+<ol>
+ <li><p>Number of Instances: 506
+</p>
+
+ </li>
+
+ <li><p>Number of Attributes: 13 continuous attributes (including "class"
+                        attribute "MEDV"), 1 binary-valued attribute.
+</p>
+
+ </li>
+
+ <li><p>Attribute Information:
+</p>
+<ol>
+ <li>
+     CRIM      per capita crime rate by town
+ </li>
+
+ <li>
+     ZN        proportion of residential land zoned for lots over 
+              25,000 sq.ft.
+ </li>
+
+ <li>
+     INDUS     proportion of non-retail business acres per town
+ </li>
+
+ <li>
+     CHAS      Charles River dummy variable (= 1 if tract bounds 
+              river; 0 otherwise)
+ </li>
+
+ <li>
+     NOX       nitric oxides concentration (parts per 10 million)
+ </li>
+
+ <li>
+     RM        average number of rooms per dwelling
+ </li>
+
+ <li>
+     AGE       proportion of owner-occupied units built prior to 1940
+ </li>
+
+ <li>
+     DIS       weighted distances to five Boston employment centres
+ </li>
+
+ <li>
+     RAD       index of accessibility to radial highways
+ </li>
+
+ <li>
+     TAX      full-value property-tax rate per $10,000
+ </li>
+
+ <li>
+     PTRATIO  pupil-teacher ratio by town
+ </li>
+
+ <li>
+     B        1000(Bk - 0.63)^2 where Bk is the proportion of blacks 
+              by town
+ </li>
+
+ <li>
+     LSTAT    % lower status of the population
+ </li>
+
+ <li>
+     MEDV     Median value of owner-occupied homes in $1000's
+ </li>
+</ol>
+
+ </li>
+
+ <li><p>Missing Attribute Values:  None.
+</p>
+
+ </li>
+</ol></dd>
+            <dt>Usage Scenario</dt>
+            <dd><p>Predict the median value of home from all other variables.
+</p></dd>
+        </dl></div><!-- /tabs-more -->
+
+        <div id="tabs-history">
+            
+            <dl id="news">
+                
+                    <dt>
+                        <a href="/repository/data/viewslug/regression-datasets-housing/1">revision 1</a>
+                    </dt>
+                    <dd>by mldata on 2010-11-06 09:58</dd>
+		
+                    <dt class="active">
+                        <a href="/repository/data/viewslug/regression-datasets-housing/2">revision 2</a>
+                    </dt>
+                    <dd>by cong on 2011-09-14 15:17</dd>
+		</dl>
+		
+        </div><!-- /tabs-history -->
+
+        <div id="tabs-comments">
+            
+            
+            
+            
+
+
+
+	<p>No one has posted any comments yet. Perhaps you would like to be the first?</p>
+
+
+            
+
+
+<h3 class="title-02">Leave a comment</h3>
+
+	To post a comment, please <a href="/accounts/signin/?next=/repository/data/viewslug/regression-datasets-housing/">sign in</a>.
+
+
+        </div><!-- /tabs-comments -->
+
+        <div id="tabs-stats">
+            <p>This item was downloaded 9859 times and viewed 14744 times.</p>
+        </div><!-- /tabs-stats -->
+
+	<div id="tabs-method">
+		
+		<h3>Tasks defined on dataset regression-datasets housing</h3>
+		
+
+		<ul>
+			
+			<li>
+			<a title="The standard task for the boston housing dataset" href="/repository/task/viewslug/boston-housing-regression/">boston housing regression</a> 2010-11-28 16:04
+			</li>
+			
+		</ul>
+		
+
+			
+		<a href="/repository/task/new_from_data/regression-datasets-housing/">
+		Submit a new Task for this Data item</a>
+	</div><!-- /tabs-method -->
+
+    </div><!-- /tabs -->
+
+</div><!-- /in -->
+
+
+			</div><!-- /content-cols2 -->
+
+			<hr class="noscreen" />
+
+			<div id="aside">
+					
+
+<div id="data-nav-right">
+<h4 class="title-03">Data</h4>
+<div class="in">
+	<ul id="subnav">
+		
+		
+		
+		<li><a href="/repository/data/by_attributes/">Public Archive</a></li>
+		
+		<li><a href="/repository/data/new/">Submit new Data</a></li>
+		<li class="search">Search
+		<form method="get" action="/repository/search/"><input type="text" size="40" maxlength="40" name="searchterm" id="searchterm" value="" /><input type="hidden" id="data" name="data" value="Data" /></form>
+		</li>
+		<li class="tagcloud">Tag Cloud<br />
+		<span style="font-size:1em"><a href="/repository/tags/data/completion/">completion</a></span> <span style="font-size:1em"><a href="/repository/tags/data/environmental/">environmental</a></span> <span style="font-size:1em"><a href="/repository/tags/data/transfer-learning/">transfer-learning</a></span> <span style="font-size:1em"><a href="/repository/tags/data/Renal/">Renal</a></span> <span style="font-size:1em"><a href="/repository/tags/data/Output/">Output</a></span> <span style="font-size:1em"><a href="/repository/tags/data/chemical/">chemical</a></span> <span style="font-size:1em"><a href="/repository/tags/data/bioinformatics/">bioinformatics</a></span> <span style="font-size:1em"><a href="/repository/tags/data/sweetrs/">sweetrs</a></span> <span style="font-size:1em"><a href="/repository/tags/data/Carcinoma/">Carcinoma</a></span> <span style="font-size:1em"><a href="/repository/tags/data/geostatistics/">geostatistics</a></span> <span style="font-size:1em"><a href="/repository/tags/data/handwritten_digits/">handwritten_digits</a></span> <span style="font-size:1em"><a href="/repository/tags/data/toy/">toy</a></span> <span style="font-size:1em"><a href="/repository/tags/data/ensemble-learning/">ensemble-learning</a></span> <span style="font-size:1em"><a href="/repository/tags/data/knist/">knist</a></span> <span style="font-size:1em"><a href="/repository/tags/data/Voldemort/">Voldemort</a></span> <span style="font-size:1em"><a href="/repository/tags/data/sweets/">sweets</a></span> <span style="font-size:1em"><a href="/repository/tags/data/network/">network</a></span> <span style="font-size:1em"><a href="/repository/tags/data/video-on-demand/">video-on-demand</a></span> <span style="font-size:1em"><a href="/repository/tags/data/biomedical/">biomedical</a></span> <span style="font-size:1em"><a href="/repository/tags/data/ontario/">ontario</a></span> <span style="font-size:1em"><a href="/repository/tags/data/Kernels/">Kernels</a></span> <span style="font-size:1em"><a href="/repository/tags/data/Label-Sequence-Learning/">Label-Sequence-Learning</a></span> <span style="font-size:1em"><a href="/repository/tags/data/b2b/">b2b</a></span> <span style="font-size:1em"><a href="/repository/tags/data/Scalar/">Scalar</a></span> <span style="font-size:1em"><a href="/repository/tags/data/lung/">lung</a></span> <span style="font-size:1em"><a href="/repository/tags/data/Transcription/">Transcription</a></span> <span style="font-size:1em"><a href="/repository/tags/data/ranking/">ranking</a></span> <span style="font-size:1em"><a href="/repository/tags/data/compuational/">compuational</a></span> <span style="font-size:1em"><a href="/repository/tags/data/Leukemia/">Leukemia</a></span> <span style="font-size:1em"><a href="/repository/tags/data/Cell/">Cell</a></span> <span style="font-size:1em"><a href="/repository/tags/data/Kernel/">Kernel</a></span> <span style="font-size:1em"><a href="/repository/tags/data/temporal-series/">temporal-series</a></span> <span style="font-size:1em"><a href="/repository/tags/data/action-recognition/">action-recognition</a></span> <span style="font-size:1em"><a href="/repository/tags/data/Classification/">Classification</a></span> <span style="font-size:1em"><a href="/repository/tags/data/MKL/">MKL</a></span> <span style="font-size:1em"><a href="/repository/tags/data/financial/">financial</a></span> <span style="font-size:1em"><a href="/repository/tags/data/NIH/">NIH</a></span> <span style="font-size:1em"><a href="/repository/tags/data/key-value/">key-value</a></span> <span style="font-size:1em"><a href="/repository/tags/data/HOG3D/">HOG3D</a></span> <span style="font-size:1em"><a href="/repository/tags/data/compounds/">compounds</a></span> <span style="font-size:1em"><a href="/repository/tags/data/ARTS/">ARTS</a></span> <span style="font-size:1em"><a href="/repository/tags/data/contempt/">contempt</a></span> <span style="font-size:1em"><a href="/repository/tags/data/prostate/">prostate</a></span> <span style="font-size:1em"><a href="/repository/tags/data/emnist/">emnist</a></span> <span style="font-size:1em"><a href="/repository/tags/data/protein-fold-prediction/">protein-fold-prediction</a></span> <span style="font-size:1em"><a href="/repository/tags/data/Linux-kernel/">Linux-kernel</a></span> <span style="font-size:1em"><a href="/repository/tags/data/chemdner/">chemdner</a></span> <span style="font-size:1em"><a href="/repository/tags/data/PUC-Rio/">PUC-Rio</a></span> <span style="font-size:1em"><a href="/repository/tags/data/michigan/">michigan</a></span> <span style="font-size:1em"><a href="/repository/tags/data/Initiation/">Initiation</a></span> <span style="font-size:1em"><a href="/repository/tags/data/service-level-metrics/">service-level-metrics</a></span> <span style="font-size:1em"><a href="/repository/tags/data/trn/">trn</a></span> <span style="font-size:1em"><a href="/repository/tags/data/history/">history</a></span> <span style="font-size:1em"><a href="/repository/tags/data/Learning/">Learning</a></span> <span style="font-size:1em"><a href="/repository/tags/data/categorization/">categorization</a></span> <span style="font-size:1em"><a href="/repository/tags/data/Biocreative/">Biocreative</a></span> <span style="font-size:2em"><a href="/repository/tags/data/Weka/">Weka</a></span> <span style="font-size:2em"><a href="/repository/tags/data/LibSVMTools/">LibSVMTools</a></span> <span style="font-size:1em"><a href="/repository/tags/data/MLL/">MLL</a></span> <span style="font-size:1em"><a href="/repository/tags/data/interpolation/">interpolation</a></span> <span style="font-size:1em"><a href="/repository/tags/data/spatial/">spatial</a></span> <span style="font-size:1em"><a href="/repository/tags/data/nervous/">nervous</a></span> <span style="font-size:1em"><a href="/repository/tags/data/conversion_failed/">conversion_failed</a></span> <span style="font-size:1em"><a href="/repository/tags/data/system/">system</a></span> <span style="font-size:1em"><a href="/repository/tags/data/jokes/">jokes</a></span> <span style="font-size:1em"><a href="/repository/tags/data/simulation-crashes/">simulation-crashes</a></span> <span style="font-size:1em"><a href="/repository/tags/data/video-frame-rate/">video-frame-rate</a></span> <span style="font-size:1em"><a href="/repository/tags/data/robot/">robot</a></span> <span style="font-size:1em"><a href="/repository/tags/data/DMOZ/">DMOZ</a></span> <span style="font-size:1em"><a href="/repository/tags/data/Harvard/">Harvard</a></span> <span style="font-size:1em"><a href="/repository/tags/data/bag-of-words/">bag-of-words</a></span> <span style="font-size:1em"><a href="/repository/tags/data/RTP-packet-rate/">RTP-packet-rate</a></span> <span style="font-size:1em"><a href="/repository/tags/data/skiing/">skiing</a></span> <span style="font-size:1em"><a href="/repository/tags/data/Clear/">Clear</a></span> <span style="font-size:1em"><a href="/repository/tags/data/GIS/">GIS</a></span> <span style="font-size:1em"><a href="/repository/tags/data/machine/">machine</a></span> <span style="font-size:1em"><a href="/repository/tags/data/testbed/">testbed</a></span> <span style="font-size:1em"><a href="/repository/tags/data/computer-vision/">computer-vision</a></span> <span style="font-size:1em"><a href="/repository/tags/data/lymphoma/">lymphoma</a></span> <span style="font-size:1em"><a href="/repository/tags/data/audio-buffer-rate/">audio-buffer-rate</a></span> <span style="font-size:1em"><a href="/repository/tags/data/char/">char</a></span> <span style="font-size:1em"><a href="/repository/tags/data/process/">process</a></span> <span style="font-size:1em"><a href="/repository/tags/data/Supervised-Machine-Learning/">Supervised-Machine-Learning</a></span> <span style="font-size:1em"><a href="/repository/tags/data/supervised/">supervised</a></span> <span style="font-size:2em"><a href="/repository/tags/data/libsvm/">libsvm</a></span> <span style="font-size:1em"><a href="/repository/tags/data/UCB/">UCB</a></span> <span style="font-size:1em"><a href="/repository/tags/data/Yahoo!/">Yahoo!</a></span> <span style="font-size:1em"><a href="/repository/tags/data/company/">company</a></span> <span style="font-size:1em"><a href="/repository/tags/data/stanford/">stanford</a></span> <span style="font-size:1em"><a href="/repository/tags/data/colon-cancer/">colon-cancer</a></span> <span style="font-size:1em"><a href="/repository/tags/data/jester/">jester</a></span> <span style="font-size:1em"><a href="/repository/tags/data/test/">test</a></span> <span style="font-size:1em"><a href="/repository/tags/data/statistics/">statistics</a></span> <span style="font-size:1em"><a href="/repository/tags/data/PubMed/">PubMed</a></span> <span style="font-size:1em"><a href="/repository/tags/data/NER/">NER</a></span> <span style="font-size:1em"><a href="/repository/tags/data/time-series/">time-series</a></span> <span style="font-size:1em"><a href="/repository/tags/data/text/">text</a></span> <span style="font-size:1em"><a href="/repository/tags/data/making/">making</a></span> <span style="font-size:2em"><a href="/repository/tags/data/slurped/">slurped</a></span> <span style="font-size:1em"><a href="/repository/tags/data/dlbcl/">dlbcl</a></span> <span style="font-size:1em"><a href="/repository/tags/data/handwritten-digits/">handwritten-digits</a></span> <span style="font-size:1em"><a href="/repository/tags/data/MIT/">MIT</a></span> <span style="font-size:1em"><a href="/repository/tags/data/network-analytics/">network-analytics</a></span> <span style="font-size:1em"><a href="/repository/tags/data/business/">business</a></span> <span style="font-size:1em"><a href="/repository/tags/data/earthquakes/">earthquakes</a></span> <span style="font-size:1em"><a href="/repository/tags/data/diffuse/">diffuse</a></span> <span style="font-size:1em"><a href="/repository/tags/data/nci/">nci</a></span> <span style="font-size:1em"><a href="/repository/tags/data/IDA_Benchmark_Repository/">IDA_Benchmark_Repository</a></span> <span style="font-size:1em"><a href="/repository/tags/data/Kannada/">Kannada</a></span> <span style="font-size:1em"><a href="/repository/tags/data/VLC/">VLC</a></span> <span style="font-size:1em"><a href="/repository/tags/data/database/">database</a></span> <span style="font-size:1em"><a href="/repository/tags/data/Activity-Recognition/">Activity-Recognition</a></span> <span style="font-size:1em"><a href="/repository/tags/data/collaborative-filtering/">collaborative-filtering</a></span> <span style="font-size:1em"><a href="/repository/tags/data/multi-kernel/">multi-kernel</a></span> <span style="font-size:1em"><a href="/repository/tags/data/sensitivity-analysis/">sensitivity-analysis</a></span> <span style="font-size:1em"><a href="/repository/tags/data/nist/">nist</a></span> <span style="font-size:1em"><a href="/repository/tags/data/ovarian/">ovarian</a></span> <span style="font-size:1em"><a href="/repository/tags/data/change-point/">change-point</a></span> <span style="font-size:1em"><a href="/repository/tags/data/CRFs/">CRFs</a></span> <span style="font-size:1em"><a href="/repository/tags/data/bionlp/">bionlp</a></span> <span style="font-size:1em"><a href="/repository/tags/data/web-pages/">web-pages</a></span> <span style="font-size:1em"><a href="/repository/tags/data/digits/">digits</a></span> <span style="font-size:1em"><a href="/repository/tags/data/recognition/">recognition</a></span> <span style="font-size:1em"><a href="/repository/tags/data/Site/">Site</a></span> <span style="font-size:1em"><a href="/repository/tags/data/matrix/">matrix</a></span> <span style="font-size:1em"><a href="/repository/tags/data/start/">start</a></span> <span style="font-size:2em"><a href="/repository/tags/data/arff/">arff</a></span> <span style="font-size:1em"><a href="/repository/tags/data/large/">large</a></span> <span style="font-size:1em"><a href="/repository/tags/data/genetic/">genetic</a></span> <span style="font-size:1em"><a href="/repository/tags/data/caltech/">caltech</a></span> <span style="font-size:1em"><a href="/repository/tags/data/article/">article</a></span> <span style="font-size:1em"><a href="/repository/tags/data/letters/">letters</a></span> <span style="font-size:1em"><a href="/repository/tags/data/list/">list</a></span> <span style="font-size:1em"><a href="/repository/tags/data/Friedman-function/">Friedman-function</a></span> <span style="font-size:1em"><a href="/repository/tags/data/finance/">finance</a></span> <span style="font-size:1em"><a href="/repository/tags/data/cluster/">cluster</a></span> <span style="font-size:1em"><a href="/repository/tags/data/jjjjjjjj/">jjjjjjjj</a></span> <span style="font-size:1em"><a href="/repository/tags/data/Wearable/">Wearable</a></span> <span style="font-size:1em"><a href="/repository/tags/data/abstracts/">abstracts</a></span> <span style="font-size:1em"><a href="/repository/tags/data/colinearity/">colinearity</a></span> <span style="font-size:1em"><a href="/repository/tags/data/Named/">Named</a></span> <span style="font-size:1em"><a href="/repository/tags/data/outcome/">outcome</a></span> <span style="font-size:1em"><a href="/repository/tags/data/face/">face</a></span> <span style="font-size:1em"><a href="/repository/tags/data/econometrics/">econometrics</a></span> <span style="font-size:1em"><a href="/repository/tags/data/qstar/">qstar</a></span> <span style="font-size:1em"><a href="/repository/tags/data/pathology/">pathology</a></span> <span style="font-size:1em"><a href="/repository/tags/data/character-recognition/">character-recognition</a></span> <span style="font-size:1em"><a href="/repository/tags/data/biology/">biology</a></span> <span style="font-size:1em"><a href="/repository/tags/data/decision/">decision</a></span> <span style="font-size:1em"><a href="/repository/tags/data/recommendation/">recommendation</a></span> <span style="font-size:1em"><a href="/repository/tags/data/contacts/">contacts</a></span> <span style="font-size:1em"><a href="/repository/tags/data/Multiple/">Multiple</a></span> <span style="font-size:1em"><a href="/repository/tags/data/Regression/">Regression</a></span> <span style="font-size:1em"><a href="/repository/tags/data/climate-model/">climate-model</a></span> <span style="font-size:1em"><a href="/repository/tags/data/aml/">aml</a></span> <span style="font-size:1em"><a href="/repository/tags/data/corporate/">corporate</a></span> <span style="font-size:1em"><a href="/repository/tags/data/comparison/">comparison</a></span> <span style="font-size:1em"><a href="/repository/tags/data/TSS/">TSS</a></span> <span style="font-size:1em"><a href="/repository/tags/data/websites/">websites</a></span> <span style="font-size:1em"><a href="/repository/tags/data/Prediction/">Prediction</a></span> <span style="font-size:1em"><a href="/repository/tags/data/Historical-Documents/">Historical-Documents</a></span> <span style="font-size:1em"><a href="/repository/tags/data/mhc/">mhc</a></span> <span style="font-size:1em"><a href="/repository/tags/data/multi-class/">multi-class</a></span> <span style="font-size:1em"><a href="/repository/tags/data/ratings/">ratings</a></span> <span style="font-size:1em"><a href="/repository/tags/data/polya/">polya</a></span> <span style="font-size:1em"><a href="/repository/tags/data/Accelerometer/">Accelerometer</a></span> <span style="font-size:1em"><a href="/repository/tags/data/big/">big</a></span> <span style="font-size:1em"><a href="/repository/tags/data/Structured-Output-Prediction/">Structured-Output-Prediction</a></span> <span style="font-size:1em"><a href="/repository/tags/data/immunohistochemistry/">immunohistochemistry</a></span> <span style="font-size:1em"><a href="/repository/tags/data/stjude/">stjude</a></span> <span style="font-size:1em"><a href="/repository/tags/data/point/">point</a></span> <span style="font-size:1em"><a href="/repository/tags/data/Translation/">Translation</a></span> <span style="font-size:1em"><a href="/repository/tags/data/b-cell/">b-cell</a></span> <span style="font-size:1em"><a href="/repository/tags/data/Handwriting-Recognition/">Handwriting-Recognition</a></span> <span style="font-size:1em"><a href="/repository/tags/data/entity/">entity</a></span> <span style="font-size:1em"><a href="/repository/tags/data/detection/">detection</a></span> <span style="font-size:1em"><a href="/repository/tags/data/cancer/">cancer</a></span> <span style="font-size:1em"><a href="/repository/tags/data/all/">all</a></span> <span style="font-size:1em"><a href="/repository/tags/data/tumor/">tumor</a></span> <span style="font-size:1em"><a href="/repository/tags/data/UQ/">UQ</a></span> <span style="font-size:1em"><a href="/repository/tags/data/Signal-processing/">Signal-processing</a></span> 
+		</li>
+	</ul>
+</div><!-- /in -->
+
+<h4 class="title-03">Sort by</h4>
+<div class="in">
+	<ul id="subnav">
+		<li><a href="/repository/data/by_submitter/">Submitter</a></li>
+		<li><a href="/repository/data/by_name/">Name</a></li>
+		<li><a href="/repository/data/by_pub_date/">Publication Date</a></li>
+		<li><a href="/repository/data/by_rating/">Rating</a></li>
+		<li><a href="/repository/data/by_downloads/">Number of Downloads</a></li>
+		<li><a href="/repository/data/by_views/">Number of Views</a></li>
+		<li><a href="/repository/data/by_instances/">Number of Instances</a></li>
+		<li><a href="/repository/data/by_attributes/">Number of Attributes</a></li>
+	</ul>
+</div>
+</div><!-- data-nav-right -->
+
+
+
+
+
+
+
+
+<h4 class="title-03">Disclaimer</h4>
+<div class="in">
+	<p>We are acting in good faith to make datasets submitted for the use of the scientific community available to everybody, but if you are a copyright holder and would like us to remove a dataset please <a href="/about/impressum/">inform us</a> and we will do it as soon as possible.</p>
+
+	<p><a href="/repository/data/">Data</a> | <a href="/repository/task/">Task</a> | <a href="/repository/method/">Method</a> | <a href="/repository/challenge/">Challenge</a></p>
+</div>
+
+
+
+
+					<h4 class="title-04">Acknowledgements</h4>
+					<div class="in">
+						<p>
+						This project is supported by PASCAL (Pattern Analysis, Statistical Modelling and Computational Learning)
+						<br />
+						<img src="/media/images/pascal-logo.png" alt="PASCAL Logo" width=200 height=70 \>
+						<br />
+						<a href="http://www.pascal-network.org/">http://www.pascal-network.org/</a>.
+						</p>
+					</div>
+			</div><!-- /aside -->
+		</div><!-- /cols2-in -->
+	</div><!-- /cols2 -->
+
+
+	<hr class="noscreen" />
+
+	<div id="footer" class="box">&copy; 2009-2018
+		<a href="http://www.ong-home.my">Cheng Soon Ong</a>,  <a href="https://kodeaffe.de">Sebastian Henschel</a>, <a href="http://ml.cs.tu-berlin.de/~mikio">Mikio L. Braun</a>, <a href="http://www.cs.helsinki.fi/u/phoyer">Patrik O. Hoyer</a>, <a href="http://sonnenburgs.de/soeren">Soeren Sonnenburg</a>
+		| <a href="/about/impressum/">Impressum</a> | <a href="http://www.nuviotemplates.com/preview.php?template=liquid-03">Visuals</a> | Hosting  <a href="http://www.ml.tu-berlin.de">ML Group</a> <a href="http://www.tu-berlin.de">TU Berlin</a> | v0.1.6.  <!--|   | Visual styles based on <a href="http://www.nuviotemplates.com/preview.php?template=liquid-03">http://www.nuviotemplates.com</a>-->
+	</div><!-- /footer -->
+</div><!-- /main -->
+
+	<script type="text/javascript">
+	var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+	document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+	try {
+		var pageTracker = _gat._getTracker("UA-11709073-1");
+		pageTracker._trackPageview();
+	} catch(err) {}
+	</script>
+
+</body>
+</html>
